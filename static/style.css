@@ -1,6 +1,10 @@
 body{
     background: #fe909b;
 }
+.song{
+    display: none;
+    visibility: hidden;
+}
 .pass-time{
     color:white;
     font-size:12px;
