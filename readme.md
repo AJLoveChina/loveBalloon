@@ -6,6 +6,9 @@
 
 <img src="./static/github-star.png"/>
 
+### TODO
+* [ ] 添加背景音乐
+
 ### config.js 说明
 > 温馨提示: 每句话那一行，最后都要以**英文逗号**结尾哦！
 ```text
