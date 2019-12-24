@@ -10,10 +10,31 @@
 </head>
 <body>
 
-<audio class="song" controls loop>
+<img src="https://github.com/AJLoveChina/loveBalloon/blob/master/static/music.png" style="position: fixed;z-index: 10001;top:10px;right:10px;" onclick="let m = document.querySelector('.song-audio-autoplay'); if (m.paused ) {m.play(); this.className = 'rotateImages'} else {m.pause(); this.className = ''}">
+<audio class="song-audio-autoplay" controls loop>
     <source src="static/wanan-yanrenzhong.mp3"></source>
     Your browser isn't invited for super fun audio time.
 </audio>
+<style type="text/css">
+    .song{
+        display: none;
+        visibility: hidden;
+    }
+    .rotateImages{
+        -webkit-animation:myRotate 10s linear infinite;
+        animation:myRotate 10s linear infinite;
+    }
+    @-webkit-keyframes myRotate{
+        0%{ -webkit-transform: rotate(0deg);}
+        50%{ -webkit-transform: rotate(180deg);}
+        100%{ -webkit-transform: rotate(360deg);}
+    }
+    @keyframes myRotate{
+        0%{ -webkit-transform: rotate(0deg);}
+        50%{ -webkit-transform: rotate(180deg);}
+        100%{ -webkit-transform: rotate(360deg);}
+    }
+</style>
 
 <div style="width:100%;max-width:500px;margin:0 auto;position: relative;">
     <div class="pass-time">
